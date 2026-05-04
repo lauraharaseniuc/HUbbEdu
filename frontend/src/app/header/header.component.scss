@@ -143,6 +143,11 @@
   border-radius: 8px;
 }
 
+.dropdown.right.scrollable {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
 .has-submenu {
   cursor: pointer;
   display: flex;

@@ -44,7 +44,23 @@
                 </li>
               </ul>
             </li>
-            <li>Clasa a X-a</li>
+            <li class="has-submenu">Clasa a X-a
+              <ul class="dropdown right">
+                <li class="has-submenu">Conținuturi
+                  <ul class="dropdown right">
+                    <li class="has-submenu">Resurse
+                      <ul class="dropdown right scrollable">
+                        @for (item of continuturiInformatica10a; track item) {
+                          <li><a [routerLink]="item.route">{{ item.label }}</a></li>
+                        }
+                      </ul>
+                    </li>
+                    <li class="has-submenu">Instrumente digitale
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
 

@@ -19,6 +19,20 @@ import {Class9DocumenteDigitale} from "./resources/class9/class9-documente-digit
 import {Class9PrezentariDigitale} from "./resources/class9/class9-prezentari-digitale/class9-prezentari-digitale";
 import {Class9ComponentaHardware} from "./resources/class9/class9-componenta-hardware/class9-componenta-hardware";
 import {Class9ComponentaSoftware} from "./resources/class9/class9-componenta-software/class9-componenta-software";
+import {Class10Multimi} from "./resources/class10/class10-multimi/class10-multimi";
+import {Class10Dictionare} from "./resources/class10/class10-dictionare/class10-dictionare";
+import {Class10Tupluri} from "./resources/class10/class10-tupluri/class10-tupluri";
+import {Class10SiruriPython} from "./resources/class10/class10-siruri-python/class10-siruri-python";
+import {Class10MetodeCriptare} from "./resources/class10/class10-metode-criptare/class10-metode-criptare";
+import {Class10ModelConceptual} from "./resources/class10/class10-model-conceptual/class10-model-conceptual";
+import {Class10TablouriCpp} from "./resources/class10/class10-tablouri-cpp/class10-tablouri-cpp";
+import {Class10SiruriCpp} from "./resources/class10/class10-siruri-cpp/class10-siruri-cpp";
+import {Class10StructuriCpp} from "./resources/class10/class10-structuri-cpp/class10-structuri-cpp";
+import {Class10SubprogrameRecursive} from "./resources/class10/class10-subprograme-recursive/class10-subprograme-recursive";
+import {Class10DivideEtImpera} from "./resources/class10/class10-divide-et-impera/class10-divide-et-impera";
+import {Class10MetodePrelucrare} from "./resources/class10/class10-metode-prelucrare/class10-metode-prelucrare";
+import {Class10AlgoritmiUmplere} from "./resources/class10/class10-algoritmi-umplere/class10-algoritmi-umplere";
+import {Class10Greedy} from "./resources/class10/class10-greedy/class10-greedy";
 
 export const routes: Routes = [
   {
@@ -42,5 +56,19 @@ export const routes: Routes = [
   { path: 'clasa9a/documente-digitale', component: Class9DocumenteDigitale },
   { path: 'clasa9a/prezentari-digitale', component: Class9PrezentariDigitale },
   { path: 'clasa9a/componenta-hardware-a-unui-sistem-de-calcul', component: Class9ComponentaHardware },
-  { path: 'clasa9a/componenta-software-a-unui-sistem-de-calcul', component: Class9ComponentaSoftware }
+  { path: 'clasa9a/componenta-software-a-unui-sistem-de-calcul', component: Class9ComponentaSoftware },
+  { path: 'clasa10a/multimi', component: Class10Multimi },
+  { path: 'clasa10a/dictionare', component: Class10Dictionare },
+  { path: 'clasa10a/tupluri', component: Class10Tupluri },
+  { path: 'clasa10a/siruri-de-caractere-in-python', component: Class10SiruriPython },
+  { path: 'clasa10a/metode-simple-de-criptare', component: Class10MetodeCriptare },
+  { path: 'clasa10a/modelul-conceptual-mixt-in-python', component: Class10ModelConceptual },
+  { path: 'clasa10a/tablouri-bidimensionale-in-cpp', component: Class10TablouriCpp },
+  { path: 'clasa10a/siruri-de-caractere-in-cpp', component: Class10SiruriCpp },
+  { path: 'clasa10a/structuri-de-date-in-cpp', component: Class10StructuriCpp },
+  { path: 'clasa10a/subprograme-recursive', component: Class10SubprogrameRecursive },
+  { path: 'clasa10a/metoda-divide-et-impera', component: Class10DivideEtImpera },
+  { path: 'clasa10a/metode-de-prelucrare-a-listelor-sortate', component: Class10MetodePrelucrare },
+  { path: 'clasa10a/algoritmi-de-umplere', component: Class10AlgoritmiUmplere },
+  { path: 'clasa10a/metoda-greedy', component: Class10Greedy }
 ];

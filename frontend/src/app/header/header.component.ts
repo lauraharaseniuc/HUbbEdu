@@ -22,6 +22,22 @@ export class HeaderComponent {
     {label: '8. Introducere în programarea orientată pe obiecte în Python', route: '/clasa9a/introducere-in-programarea-orientata-pe-obiecte-in-python'},
     {label: '9. Interfețe grafice', route: '/clasa9a/interfete-grafice'}
   ];
+  continuturiInformatica10a = [
+    {label: '1. Mulțimi', route: '/clasa10a/multimi'},
+    {label: '2. Dicționare', route: '/clasa10a/dictionare'},
+    {label: '3. Tupluri', route: '/clasa10a/tupluri'},
+    {label: '4. Șiruri de caractere în Python', route: '/clasa10a/siruri-de-caractere-in-python'},
+    {label: '5. Metode simple de criptare a șirurilor de caractere și verificare a integrității datelor', route: '/clasa10a/metode-simple-de-criptare'},
+    {label: '6. Modelul conceptual mixt în Python', route: '/clasa10a/modelul-conceptual-mixt-in-python'},
+    {label: '7. Tablouri bidimensionale în C++', route: '/clasa10a/tablouri-bidimensionale-in-cpp'},
+    {label: '8. Șiruri de caractere în C++', route: '/clasa10a/siruri-de-caractere-in-cpp'},
+    {label: '9. Structuri de date în C++ pentru memorarea datelor neomogene (înregistrări)', route: '/clasa10a/structuri-de-date-in-cpp'},
+    {label: '10. Subprograme recursive', route: '/clasa10a/subprograme-recursive'},
+    {label: '11. Metoda Divide et impera', route: '/clasa10a/metoda-divide-et-impera'},
+    {label: '12. Metode de prelucrare a listelor sortate', route: '/clasa10a/metode-de-prelucrare-a-listelor-sortate'},
+    {label: '13. Algoritmi de umplere', route: '/clasa10a/algoritmi-de-umplere'},
+    {label: '14. Metoda Greedy', route: '/clasa10a/metoda-greedy'}
+  ];
   continuturiTIC = [
     {label: '1. Comunicare și colaborare digitală', route: '/clasa9a/comunicare-si-colaborare-digitala'},
     {label: '2. Aplicații și platforme care sprijină învățarea', route: '/clasa9a/aplicatii-si-platforme-care-sprijina-invatarea'},

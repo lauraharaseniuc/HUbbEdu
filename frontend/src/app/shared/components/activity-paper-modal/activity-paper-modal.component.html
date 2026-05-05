@@ -1,0 +1,30 @@
+<mat-dialog-content class="modal-body">
+  <div class="modal-header">
+    <h2 class="modal-title">Fișă de lucru generată</h2>
+    <div class="modal-actions">
+      @if (!loading && !error) {
+        <button class="modal-btn" (click)="print()">Printează</button>
+      }
+      <button class="modal-btn modal-btn--close" (click)="close()">Închide</button>
+    </div>
+  </div>
+
+  @if (loading) {
+    <div class="loading-state">
+      <mat-spinner diameter="48"></mat-spinner>
+      <p>Se generează fișa de lucru…</p>
+      <span class="loading-hint">Durează ~10 secunde</span>
+    </div>
+  } @else if (error) {
+    <div class="error-state">
+      <span class="error-icon">⚠️</span>
+      <p>A apărut o eroare. Încearcă din nou.</p>
+      <button mat-stroked-button (click)="close()">Închide</button>
+    </div>
+  } @else {
+    <div class="activity-text-preview">
+      <strong>Activitate:</strong> {{ data.activityText }}
+    </div>
+    <div class="paper-content" [innerHTML]="safeContent"></div>
+  }
+</mat-dialog-content>

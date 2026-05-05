@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './class10-multimi.scss',
 })
 export class Class10Multimi {
-
+  showVideoOperatii = false;
 }

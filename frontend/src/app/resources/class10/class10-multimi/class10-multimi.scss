@@ -1,0 +1,10 @@
+.video-wrapper {
+  margin-top: 0.75rem;
+
+  video {
+    width: 100%;
+    max-width: 640px;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+  }
+}

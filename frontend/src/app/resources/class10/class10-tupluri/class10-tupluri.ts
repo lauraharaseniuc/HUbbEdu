@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './class10-tupluri.scss',
 })
 export class Class10Tupluri {
-
+  showVideoOperatii = false;
 }

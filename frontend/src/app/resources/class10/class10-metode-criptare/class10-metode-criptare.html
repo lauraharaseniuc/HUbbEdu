@@ -3,6 +3,94 @@
     <span class="lesson-subject">Informatică · Clasa a X-a</span>
     <h1>5. Metode simple de criptare a șirurilor de caractere și verificare a integrității datelor</h1>
   </div>
-  <p class="lesson-section-label">Conținut în curs de elaborare</p>
-  <p>Resursele pentru această lecție vor fi disponibile în curând.</p>
+  <p class="lesson-section-label">Exemple de activități de învățare</p>
+  <ul>
+    <li>
+      caracteristici ale criptării și decriptării prin metoda substituției simple (substituție monoalfabetică)
+      <ul>
+        <li>enumerarea unor metode simple de criptare (de exemplu, cifrul lui Cezar, substituția monoalfabetică) în contextul utilizării unor tehnici de codificare pentru a ascunde indicii într-un joc de tip „vânătoare de comori"
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('enumerarea unor metode simple de criptare (cifrul lui Cezar, substituția monoalfabetică) în contextul utilizării unor tehnici de codificare pentru a ascunde indicii într-un joc de tip vânătoare de comori')">
+            Generează fișă
+          </button>
+        </li>
+        <li>identificarea caracteristicilor specifice fiecărei metode de criptare (de exemplu, cifrul lui Cezar - deplasarea literelor, substituție monoalfabetică - înlocuire literă cu literă) în contextul analizării unui mesaj codificat, observând dacă literele sunt deplasate, înlocuite sau reordonate
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('identificarea caracteristicilor specifice fiecărei metode de criptare: cifrul lui Cezar (deplasarea literelor), substituție monoalfabetică (înlocuire literă cu literă), în contextul analizării unui mesaj codificat')">
+            Generează fișă
+          </button>
+        </li>
+        <li>utilizarea metodei substituției simple pentru transmiterea de mesaje confidențiale între elevii unei clase, prin înlocuirea fiecărei litere din mesaj cu o altă literă stabilită conform unui tabel de substituție cunoscut, astfel încât mesajul rezultat să poată fi citit doar de destinatarii care cunosc regula de corespondență
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('utilizarea metodei substituției simple pentru transmiterea de mesaje confidențiale între elevii unei clase, prin înlocuirea fiecărei litere din mesaj cu o altă literă stabilită conform unui tabel de substituție cunoscut')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      caracteristici ale criptării și decriptării folosind cifrul lui Cezar și repere pentru aplicarea metodei
+      <ul>
+        <li>explicarea modului de funcționare al cifrului lui Cezar, folosind ca exemplu transformarea cuvântului „ANA" în „DQC" prin deplasarea fiecărei litere cu 3 poziții în alfabet, în contextul protejării unui mesaj trimis online
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('explicarea modului de funcționare al cifrului lui Cezar, folosind ca exemplu transformarea cuvântului ANA în DQC prin deplasarea fiecărei litere cu 3 poziții în alfabet, în contextul protejării unui mesaj trimis online')">
+            Generează fișă
+          </button>
+        </li>
+        <li>exersarea unui sistem de criptare a mesajelor folosind cifrul lui Cezar, prin introducerea unui text format din litere mari și a unei chei de criptare care indică numărul de poziții cu care fiecare literă este deplasată, obținând mesajul criptat
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('exersarea unui sistem de criptare a mesajelor folosind cifrul lui Cezar, prin introducerea unui text format din litere mari și a unei chei de criptare care indică numărul de poziții cu care fiecare literă este deplasată, obținând mesajul criptat')">
+            Generează fișă
+          </button>
+        </li>
+        <li>aplicarea algoritmilor de criptare corespunzători metodelor studiate pentru transformarea unui mesaj obișnuit într-un mesaj criptat, folosind reguli precise de modificare a caracterelor, în scopul protejării informațiilor transmise
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('aplicarea algoritmilor de criptare corespunzători metodelor studiate pentru transformarea unui mesaj obișnuit într-un mesaj criptat, folosind reguli precise de modificare a caracterelor, în scopul protejerii informațiilor transmise')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      caracteristici ale criptării și decriptării utilizând cifrul Vigenère și repere pentru aplicarea metodei
+      <ul>
+        <li>explicarea modului în care diferitele metode de criptare produc modificări specifice asupra unui șir de caractere, în contextul mesajelor codificate din jocuri de tip „vânătoare de comori", evidențiind faptul că literele pot fi deplasate, înlocuite sau reordonate în funcție de metoda utilizată
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('explicarea modului în care diferitele metode de criptare produc modificări specifice asupra unui șir de caractere, în contextul mesajelor codificate din jocuri de tip vânătoare de comori, evidențiind că literele pot fi deplasate, înlocuite sau reordonate')">
+            Generează fișă
+          </button>
+        </li>
+        <li>descrierea modului în care se aplică cifrul Vigenère pentru a cripta un mesaj cu un cuvânt cheie, obținând un șir în care fiecare literă este modificată adunând numărul de ordine din alfabet al literei din mesaj cu numărul de ordine al caracterului din cheia de criptare modulo 26
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('descrierea modului în care se aplică cifrul Vigenère pentru a cripta un mesaj cu un cuvânt cheie, obținând un șir în care fiecare literă este modificată adunând numărul de ordine din alfabet al literei din mesaj cu numărul de ordine al caracterului din cheie modulo 26')">
+            Generează fișă
+          </button>
+        </li>
+        <li>compararea metodelor de criptare studiate (cifrul lui Cezar, substituția simplă, cifrul Vigenère) din perspectiva modului de transformare a mesajului, a tipului de cheie utilizate și a nivelului de dificultate în descifrarea unui mesaj real
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('compararea metodelor de criptare studiate (cifrul lui Cezar, substituția simplă, cifrul Vigenère) din perspectiva modului de transformare a mesajului, a tipului de cheie utilizate și a nivelului de dificultate în descifrarea unui mesaj real')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      caracteristici ale sumei de control a unui șir de caractere sau a unui fișier text și determinarea sa utilizând algoritmul lui Fletcher
+      <ul>
+        <li>proiectarea unor soluții pentru verificarea integrității datelor textuale (de exemplu, validarea unui fișier trimis online sau detectarea modificărilor unui mesaj), prin aplicarea algoritmului lui Fletcher, astfel încât soluția să fie mai eficientă și mai sigură în raport cu problema reală rezolvată
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('proiectarea unor soluții pentru verificarea integrității datelor textuale (validarea unui fișier trimis online sau detectarea modificărilor unui mesaj), prin aplicarea algoritmului lui Fletcher')">
+            Generează fișă
+          </button>
+        </li>
+        <li>evaluarea adecvării metodelor de criptare și decriptare utilizate într-un context real, precum protejarea mesajelor transmise într-o aplicație de comunicare, prin justificarea alegerii metodei (cifrul lui Cezar, substituție simplă, cifrul Vigenère) în funcție de nivelul de securitate necesar, tipul cheii folosite și ușurința de aplicare
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('evaluarea adecvării metodelor de criptare și decriptare utilizate într-un context real, precum protejarea mesajelor transmise într-o aplicație de comunicare, prin justificarea alegerii metodei în funcție de nivelul de securitate necesar, tipul cheii folosite și ușurința de aplicare')">
+            Generează fișă
+          </button>
+        </li>
+        <li>analizarea mesajelor criptate obținute în situații concrete cu metodele studiate, pentru a identifica erori de criptare, cum ar fi litere transformate incorect, pierderea unor caractere sau aplicarea greșită a regulilor metodei alese
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('analizarea mesajelor criptate obținute în situații concrete cu metodele studiate, pentru a identifica erori de criptare, cum ar fi litere transformate incorect, pierderea unor caractere sau aplicarea greșită a regulilor metodei alese')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+  </ul>
 </div>

@@ -3,6 +3,87 @@
     <span class="lesson-subject">Informatică · Clasa a X-a</span>
     <h1>10. Subprograme recursive</h1>
   </div>
-  <p class="lesson-section-label">Conținut în curs de elaborare</p>
-  <p>Resursele pentru această lecție vor fi disponibile în curând.</p>
+  <p class="lesson-section-label">Exemple de activități de învățare</p>
+  <ul>
+    <li>
+      caracteristici, rol, mecanism de executare
+      <ul>
+        <li>enumerarea caracteristicilor principale ale unui subprogram recursiv, în contextul elaborării unui astfel de subprogram pentru calculul lui n! definit prin relația recurentă cunoscută
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('enumerarea caracteristicilor principale ale unui subprogram recursiv, în contextul elaborării unui astfel de subprogram pentru calculul lui n! definit prin relația recurentă cunoscuta')">
+            Generează fișă
+          </button>
+        </li>
+        <li>recunoașterea termenilor „recursivitate directă" și „recursivitate indirectă" prin asocierea lor cu definițiile corespunzătoare
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('recunoașterea termenilor recursivitate directă și recursivitate indirectă prin asocierea lor cu definițiile corespunzătoare')">
+            Generează fișă
+          </button>
+        </li>
+        <li>explicarea modului de executare a unui subprogram recursiv, descriind cum fiecare apel este plasat pe stivă și rămâne în așteptare până la rezolvarea apelului următor, folosind ca exemplu o serie de cutii puse una în alta: întâi se deschide cutia cea mai mare, abia după ce se ajunge la ultima cutie se preia obiectul, iar cutiile sunt închise în ordinea inversă deschiderii
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('explicarea modului de executare a unui subprogram recursiv, descriind cum fiecare apel este plasat pe stivă și rămâne în așteptare, folosind ca exemplu o serie de cutii puse una în alta, unde cutiile sunt deschise și închise în ordine inversă, similar cu ordinea de plasare și rezolvare a apelurilor recursive pe stivă')">
+            Generează fișă
+          </button>
+        </li>
+        <li>enumerarea condițiilor pe care trebuie să le îndeplinească un subprogram recursiv pentru a funcționa corect: necesitatea unui caz de oprire, a unei transformări care reduce progresiv problema și a unui apel recursiv care aplică aceeași procedură până la atingerea condiției de oprire, în contextul calculării factorialului unui număr
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('enumerarea condițiilor pe care trebuie să le îndeplinească un subprogram recursiv pentru a funcționa corect: un caz de oprire, o transformare care reduce progresiv problema și un apel recursiv care aplică aceeași procedură până la atingerea condiției de oprire')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      repere pentru scrierea subprogramelor recursive în Python
+      <ul>
+        <li>recunoașterea sintaxei corecte pentru definirea unui subprogram recursiv în Python, în contextul calculării sumei cifrelor unui număr
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('recunoașterea sintaxei corecte pentru definirea unui subprogram recursiv în Python, în contextul calculării sumei cifrelor unui număr')">
+            Generează fișă
+          </button>
+        </li>
+        <li>aplicarea recursivității pentru determinarea unui termen din șirul lui Fibonacci, prin urmărirea apelurilor unui subprogram recursiv în Python
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('aplicarea recursivității pentru determinarea unui termen din șirul lui Fibonacci, prin urmărirea apelurilor unui subprogram recursiv în Python')">
+            Generează fișă
+          </button>
+        </li>
+        <li>aplicarea recursivității pentru calcularea sumei elementelor unei liste, pe baza unui subprogram recursiv dat în limbajul Python, care adună elementul curent al listei cu rezultatul obținut prin apelarea sa asupra restului listei
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('aplicarea recursivității pentru calcularea sumei elementelor unei liste, pe baza unui subprogram recursiv dat în Python, care adună elementul curent al listei cu rezultatul obținut prin apelarea sa asupra restului listei')">
+            Generează fișă
+          </button>
+        </li>
+        <li>compararea abordării recursive și a celei iterative în Python pentru rezolvarea unei probleme matematice precum calculul sumei primelor n numere naturale, analizând diferențele privind numărul de pași efectuați, modul de repetare a operațiilor și utilizarea memoriei în funcție de valoarea lui n
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('compararea abordării recursive și a celei iterative în Python pentru rezolvarea unei probleme matematice precum calculul sumei primelor n numere naturale, analizând diferențele privind numărul de pași efectuați, modul de repetare a operațiilor și utilizarea memoriei')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      repere pentru scrierea subprogramelor recursive în C++
+      <ul>
+        <li>descrierea elementelor specifice sintaxei pentru declararea unei funcții recursive în C++
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('descrierea elementelor specifice sintaxei pentru declararea unei funcții recursive în C++')">
+            Generează fișă
+          </button>
+        </li>
+        <li>recunoașterea sintaxei pentru definirea unei funcții recursive în C++ în contextul adunării primelor n numere naturale, prin alegerea unei variante de sintaxă din două posibile
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('recunoașterea sintaxei pentru definirea unei funcții recursive în C++ în contextul adunării primelor n numere naturale, prin alegerea unei variante de sintaxă din două posibile')">
+            Generează fișă
+          </button>
+        </li>
+        <li>aplicarea recursivității pentru prelucrarea cifrelor unui număr întreg, prin urmărirea pas cu pas a unui subprogram în C++ care extrage o cifră la fiecare apel și se autoapelează pentru numărul obținut prin eliminarea acesteia, până la epuizarea tuturor cifrelor, pentru a calcula suma, produsul sau media aritmetică a cifrelor selectate
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('aplicarea recursivității pentru prelucrarea cifrelor unui număr întreg în C++, prin urmărirea pas cu pas a unui subprogram care extrage o cifră la fiecare apel și se autoapelează pentru numărul obținut prin eliminarea acesteia, pentru a calcula suma, produsul sau media cifrelor')">
+            Generează fișă
+          </button>
+        </li>
+        <li>analizarea consumului de timp și memorie al unui subprogram recursiv care rezolvă o problemă matematică, prin observarea numărului de apeluri recursive efectuate și a spațiului ocupat în stiva de executare pe măsură ce parametrul utilizat se modifică
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('analizarea consumului de timp și memorie al unui subprogram recursiv care rezolvă o problemă matematică, prin observarea numărului de apeluri recursive efectuate și a spațiului ocupat în stiva de executare pe măsură ce parametrul utilizat se modifică')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+  </ul>
 </div>

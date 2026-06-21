@@ -4,19 +4,53 @@
     <h1>3. Tupluri</h1>
   </div>
   <p class="lesson-section-label">Exemple de activități de învățare</p>
-
   <ul>
     <li>
-      operații și operatori specifici: acces la date, apartenență, concatenare, multiplicare
+      caracteristici și repere pentru acces la date, parcurgerea lor și pentru aplicarea algoritmilor de bază în scopul
+      prelucrării acestora
       <ul>
-        <li>aplicarea metodelor și funcțiilor uzuale pentru tupluri în rezolvarea unor probleme practice, de exemplu, pentru gestionarea
-          unui magazin, în care încasările săptămânale sunt memorate în tupluri, și pe baza acestora se determină numărul total de
-          zile cu încasări, ziua cu cele mai multe/puține încasări, suma totală încasată pe săptămână, încasările sortate
-          crescător/descrescător, verificarea existenței a cel puțin unei zile cu încasări, verificarea faptului că au fost încasări în
-          fiecare zi înregistrată
+        <li>enumerarea caracteristicilor tuplurilor în contextul utilizării lor pentru stocarea coordonatelor geografice
+          (latitudine, longitudine) într-un sistem de navigație care necesită date ce nu trebuie să fie modificate
+          accidental
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('enumerarea caracteristicilor tuplurilor în contextul utilizării lor pentru stocarea coordonatelor geografice (latitudine, longitudine) într-un sistem de navigație care necesită date ce nu trebuie să fie modificate accidental')">
+            Generează fișă
+          </button>
+        </li>
+        <li>identificarea caracteristicii tuplurilor de reprezentare a unor perechi fixe de valori în contextul
+          memorării culorilor ca triplete RGB, într-o aplicație de grafică
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('identificarea caracteristicii tuplurilor de reprezentare a unor perechi fixe de valori în contextul memorării culorilor ca triplete RGB, într-o aplicație de grafică')">
+            Generează fișă
+          </button>
+        </li>
+        <li>enumerarea caracteristicilor modelelor conceptuale liniare tuplu și listă, în contextul reprezentării unui
+          punct fix de pe o hartă (de exemplu, un oraș, ale cărui coordonate nu pot fi modificate) și a unui punct mobil
+          de pe hartă (care se actualizează, de exemplu, poziția unui robot care se mișcă)
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaTupluri = !showFisaTupluri">
+              {{ showFisaTupluri ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showFisaTupluri" style="margin-top: 8px;">
+              <iframe src="/fisere/Fisa_de_Lucru_Python_Colectii.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      operații și operatori specifici: acces la date, apartenența, concatenare, multiplicare
+      <ul>
+        <li>aplicarea metodelor și funcțiilor uzuale pentru tupluri în rezolvarea unor probleme practice, de exemplu,
+          pentru gestionarea unui magazin, în care încasările săptămânale sunt memorate în tupluri, și pe baza acestora
+          se determină numărul total de zile cu încasări, ziua cu cele mai multe/puține încasări, suma totală încasată
+          pe săptămână, încasările sortate crescător/descrescător, verificarea existenței a cel puțin unei zile cu
+          încasări, verificarea faptului că au fost încasări în fiecare zi înregistrată
           <div class="resource-block">
             <button class="generate-btn modal-btn modal-btn--close" (click)="showVideoOperatii = !showVideoOperatii">
-              {{ showVideoOperatii ? 'ascunde resursele' : 'Vezi resursele' }}
+              {{ showVideoOperatii ? 'Ascunde resursele' : 'Vezi resursele' }}
             </button>
             <div class="video-wrapper" [hidden]="!showVideoOperatii">
               <iframe
@@ -28,6 +62,81 @@
               </iframe>
             </div>
           </div>
+        </li>
+        <li>recunoașterea sintaxei de accesare a componentelor unui tuplu în Python, în contextul accesării abscisei sau
+          ordonatei unui punct fix de pe o hartă, reprezentat printr-un tuplu
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('recunoașterea sintaxei de accesare a componentelor unui tuplu în Python, în contextul accesării abscisei sau ordonatei unui punct fix de pe o hartă, reprezentat printr-un tuplu')">
+            Generează fișă
+          </button>
+        </li>
+        <li>identificarea modului de inițializare a unui tuplu în Python, pentru un punct fix pe o hartă, dat prin
+          coordonatele (x,y)
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('identificarea modului de inițializare a unui tuplu în Python, pentru un punct fix pe o hartă, dat prin coordonatele (x,y)')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      metode uzuale pentru numărare, căutare
+      <ul>
+        <li>aplicarea unui algoritm de sortare asupra unei liste de produse reprezentate prin tupluri (denumire, preț),
+          folosind al doilea element al fiecărui tuplu pentru a ordona produsele crescător după preț
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('aplicarea unui algoritm de sortare asupra unei liste de produse reprezentate prin tupluri (denumire, preț), folosind al doilea element al fiecărui tuplu pentru a ordona produsele crescător după preț')">
+            Generează fișă
+          </button>
+        </li>
+        <li>utilizarea tuplurilor pentru calcularea mediei la o disciplină școlară, prin memorarea notelor unui elev în
+          tupluri de forma (disciplină, notă), selectarea tuplurilor corespunzătoare acelei discipline, adunarea notelor
+          și împărțirea sumei la numărul de note adunate pentru a obține media
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('utilizarea tuplurilor pentru calcularea mediei la o disciplină școlară, prin memorarea notelor unui elev în tupluri de forma (disciplină, notă), selectarea tuplurilor corespunzătoare acelei discipline, adunarea notelor și împărțirea sumei la numărul de note adunate')">
+            Generează fișă
+          </button>
+        </li>
+        <li>aplicarea mecanismului de despachetare a unui tuplu (tuple unpacking) pentru extragerea valorilor, de
+          exemplu, integrarea într-o aplicație de gestionare a elevilor, în care funcțiile returnează mai multe
+          informații simultan
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('aplicarea mecanismului de despachetare a unui tuplu (tuple unpacking) pentru extragerea valorilor, de exemplu, integrarea într-o aplicație de gestionare a elevilor în care funcțiile returnează mai multe informații simultan')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      repere pentru identificarea și utilizarea altor clase și metode adecvate pentru prelucrarea tuplurilor, în funcție
+      de nevoile proprii
+      <ul>
+        <li>analizarea adecvării utilizării tuplurilor, pentru a organiza datele (disciplinele) în cadrul unui program
+          săptămânal fixat
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('analizarea adecvării utilizării tuplurilor pentru a organiza datele (disciplinele) în cadrul unui program săptămânal fixat')">
+            Generează fișă
+          </button>
+        </li>
+        <li>examinarea modului în care folosirea tuplurilor într-o aplicație medicală contribuie la păstrarea
+          neschimbată a datelor esențiale ale unui pacient (nume, CNP, data nașterii), prin utilizarea unei structuri cu
+          valori fixe care limitează alterarea accidentală a informațiilor
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('examinarea modului în care folosirea tuplurilor într-o aplicație medicală contribuie la păstrarea neschimbată a datelor esențiale ale unui pacient (nume, CNP, data nașterii), prin utilizarea unei structuri cu valori fixe care limitează alterarea accidentală a informațiilor')">
+            Generează fișă
+          </button>
+        </li>
+        <li>implementarea unor aplicații care folosesc tupluri, de exemplu, pentru gestionarea punctajelor la un concurs
+          unde fiecare tuplu conține (nume, scor), pentru gestionarea coordonatelor geografice pentru un explorator sau
+          pentru gestionarea codurilor de culori RGB pentru imagini
+          <button class="generate-btn modal-btn modal-btn--close"
+                  (click)="generateActivity('implementarea unor aplicații care folosesc tupluri, de exemplu, pentru gestionarea punctajelor la un concurs unde fiecare tuplu conține (nume, scor), pentru gestionarea coordonatelor geografice pentru un explorator sau pentru gestionarea codurilor de culori RGB pentru imagini')">
+            Generează fișă
+          </button>
         </li>
       </ul>
     </li>

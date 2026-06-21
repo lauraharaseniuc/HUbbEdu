@@ -4,21 +4,41 @@
     <h1>1. Mulțimi</h1>
   </div>
   <p class="lesson-section-label">Exemple de activități de învățare</p>
-
-
   <ul>
     <li>
-      operații și operatori specifici: reuniune, intersecție, diferență, egalitate, incluziune,
-      apartenență
+      caracteristici și repere pentru acces la date, parcurgerea lor și pentru aplicarea algoritmilor de bază în scopul prelucrării acestora
       <ul>
-        <li>utilizarea unor operatori (|, &, -) și metode (add(), remove(), union(), intersection()) ale clasei set în
-          contexte practice, de
-          exemplu, pentru gestionarea participării elevilor la activități extrașcolare, cu evidențierea modului în care
-          aceste operații
-          pot simplifica prelucrarea și compararea datelor
+        <li>definirea conceptului de mulțime în contextul determinării drepturilor distincte de acces care sunt atribuite unui grup de utilizatori cu roluri diferite, unde fiecare drept apare o singură dată, chiar dacă e atribuit mai multor persoane, iar ordinea înregistrării acestora nu contează
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('definirea conceptului de mulțime în contextul determinării drepturilor distincte de acces care sunt atribuite unui grup de utilizatori cu roluri diferite, unde fiecare drept apare o singură dată, chiar dacă e atribuit mai multor persoane, iar ordinea înregistrării acestora nu contează')">
+            Generează fișă
+          </button>
+        </li>
+        <li>enumerarea operațiilor de bază asupra mulțimilor (reuniune, intersecție, diferență, egalitate, incluziune, testare apartenență), în contextul în care se cunoaște lista obiectelor transportate cu două rucsacuri și se cere să fie identificate obiectele comune, cele conținute de un singur rucsac etc.
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('enumerarea operațiilor de bază asupra mulțimilor (reuniune, intersecție, diferență, egalitate, incluziune, testare apartenență), în contextul în care se cunoaște lista obiectelor transportate cu două rucsacuri și se cere să fie identificate obiectele comune, cele conținute de un singur rucsac')">
+            Generează fișă
+          </button>
+        </li>
+        <li>precizarea caracteristicilor unei mulțimi în contextul gestionării utilizatorilor înregistrați pe platforme diferite pentru a evita dublurile
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('precizarea caracteristicilor unei mulțimi în contextul gestionării utilizatorilor înregistrați pe platforme diferite pentru a evita dublurile')">
+            Generează fișă
+          </button>
+        </li>
+        <li>explicarea caracteristicilor mulțimilor și listelor, în contextul organizării și accesării elementelor acestora în situații cotidiene, de exemplu, o listă de persoane care așteaptă la rând și determinarea clienților distincți ai unei companii de telefonie, pe baza unei mulțimi de abonamente
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('explicarea caracteristicilor mulțimilor și listelor, în contextul organizării și accesării elementelor acestora în situații cotidiene, de exemplu, o listă de persoane care așteaptă la rând și determinarea clienților distincți ai unei companii de telefonie, pe baza unei mulțimi de abonamente')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      operații și operatori specifici: reuniune, intersecție, diferență, egalitate, incluziune, apartenența
+      <ul>
+        <li>utilizarea unor operatori (|, &, -) și metode (add(), remove(), union(), intersection()) ale clasei set în contexte practice, de exemplu, pentru gestionarea participării elevilor la activități extrașcolare, cu evidențierea modului în care aceste operații pot simplifica prelucrarea și compararea datelor
           <div class="resource-block">
             <button class="generate-btn modal-btn modal-btn--close" (click)="showVideoOperatii = !showVideoOperatii">
-              {{ showVideoOperatii ? 'ascunde resursele' : 'Vezi resursele' }}
+              {{ showVideoOperatii ? 'Ascunde resursele' : 'Vezi resursele' }}
             </button>
             <div class="video-wrapper" [hidden]="!showVideoOperatii">
               <iframe
@@ -31,9 +51,62 @@
             </div>
           </div>
         </li>
+        <li>recunoașterea sintaxei corecte de inițializare a unei mulțimi (set) în contextul în care sunt adunate obiecte diferite (de exemplu, tipuri de fructe) într-o colecție în care elementele sunt unice, cu evidențierea modului în care utilizarea acoladelor și a elementelor separate prin virgule permite crearea unei mulțimi fără dubluri și fără ordine prestabilită
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('recunoașterea sintaxei corecte de inițializare a unei mulțimi (set) în contextul în care sunt adunate obiecte diferite (de exemplu, tipuri de fructe) într-o colecție în care elementele sunt unice, cu evidențierea modului în care utilizarea acoladelor și a elementelor separate prin virgule permite crearea unei mulțimi fără dubluri și fără ordine prestabilită')">
+            Generează fișă
+          </button>
+        </li>
+        <li>identificarea operatorului pentru verificarea apartenenței unui element la o mulțime în Python în contextul scrierii unei secvențe de instrucțiuni prin care se verifică dacă o persoană este deja înscrisă pe lista participanților la un eveniment, fără a fi necesară parcurgerea întregii liste
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('identificarea operatorului pentru verificarea apartenenței unui element la o mulțime în Python în contextul scrierii unei secvențe de instrucțiuni prin care se verifică dacă o persoană este deja înscrisă pe lista participanților la un eveniment, fără a fi necesară parcurgerea întregii liste')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      metode uzuale pentru adăugare, ștergere, inițializare
+      <ul>
+        <li>utilizarea unor metode adecvate din clasa set în implementarea unor programe pentru verificarea faptului că o listă este formată din elemente distincte (de exemplu, coduri unice de participare), eliminarea elementelor duplicate dintr-o listă, determinarea elementelor comune între două colecții (de exemplu, elevii înscriși la două cercuri diferite)
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('utilizarea unor metode adecvate din clasa set în implementarea unor programe pentru verificarea faptului că o listă este formată din elemente distincte, eliminarea elementelor duplicate dintr-o listă, determinarea elementelor comune între două colecții, de exemplu, elevii înscriși la două cercuri diferite')">
+            Generează fișă
+          </button>
+        </li>
+        <li>aplicarea operațiilor de reuniune și intersecție asupra a două mulțimi de clienți din două magazine online, pentru a stabili atât lista tuturor clienților care pot primi oferte promoționale, cât și clienții comuni celor două magazine
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('aplicarea operațiilor de reuniune și intersecție asupra a două mulțimi de clienți din două magazine online, pentru a stabili atât lista tuturor clienților care pot primi oferte promoționale, cât și clienții comuni celor două magazine')">
+            Generează fișă
+          </button>
+        </li>
+        <li>analizarea mesajelor de eroare apărute în Python la includerea într-o mulțime a unor elemente mutabile (de exemplu, liste sau dicționare), prin asocierea cu situația în care într-o colecție de obiecte unice se încearcă adăugarea unui obiect care își poate schimba forma
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('analizarea mesajelor de eroare apărute în Python la includerea într-o mulțime a unor elemente mutabile (de exemplu, liste sau dicționare), prin asocierea cu situația în care într-o colecție de obiecte unice se încearcă adăugarea unui obiect care își poate schimba forma')">
+            Generează fișă
+          </button>
+        </li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+      repere pentru identificarea și utilizarea altor metode adecvate pentru prelucrarea mulțimilor, în funcție de nevoile proprii
+      <ul>
+        <li>analizarea comportamentului unor programe care realizează operații de bază cu mulțimi (de exemplu, verificări rapide ale apartenenței, identificarea dublurilor într-o listă de înscrieri), utilizând clasa set, respectiv list, pentru alegerea unei variante eficiente din punctul de vedere al timpului de executare
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('analizarea comportamentului unor programe care realizează operații de bază cu mulțimi, de exemplu, verificări rapide ale apartenenței, identificarea dublurilor într-o listă de înscrieri, utilizând clasa set, respectiv list, pentru alegerea unei variante eficiente din punctul de vedere al timpului de executare')">
+            Generează fișă
+          </button>
+        </li>
+        <li>implementarea unor aplicații personalizate care utilizează clase Python specifice pentru gestionarea mulțimilor la matematică (de exemplu, un software educațional) sau generarea unor numere distincte pentru jocuri de tip Bingo
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('implementarea unor aplicații personalizate care utilizează clase Python specifice pentru gestionarea mulțimilor la matematică sau generarea unor numere distincte pentru jocuri de tip Bingo')">
+            Generează fișă
+          </button>
+        </li>
+        <li>proiectarea unui algoritm de păstrare a evidențelor pentru o organizație educațională (de exemplu, o platformă de cursuri), pentru a identifica participanții înscriși, a evita înscrierile redundante, pe baza datelor utilizatorilor care sunt organizate în mulțimi
+          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('proiectarea unui algoritm de păstrare a evidențelor pentru o organizație educațională (de exemplu, o platformă de cursuri), pentru a identifica participanții înscriși, a evita înscrierile redundante, pe baza datelor utilizatorilor care sunt organizate în mulțimi')">
+            Generează fișă
+          </button>
+        </li>
       </ul>
     </li>
     <br>
   </ul>
-
 </div>

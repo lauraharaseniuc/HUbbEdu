@@ -26,10 +26,10 @@ Structurează fișa astfel:
 (la fel ca mai sus)
 
 ## Exerciții propuse
-1. **[Titlu]** — [enunț] _(Dificultate: ușor)_
-2. **[Titlu]** — [enunț] _(Dificultate: mediu)_
-3. **[Titlu]** — [enunț] _(Dificultate: mediu)_
-4. **[Titlu]** — [enunț] _(Dificultate: dificil)_
+1. **[Titlu]** — [enunț] (Dificultate: ușor)
+2. **[Titlu]** — [enunț] (Dificultate: mediu)
+3. **[Titlu]** — [enunț] (Dificultate: mediu)
+4. **[Titlu]** — [enunț] (Dificultate: dificil)
 
 ## Exercițiu bonus
 (Un exercițiu mai complex pentru elevii avansați, cu enunț complet)

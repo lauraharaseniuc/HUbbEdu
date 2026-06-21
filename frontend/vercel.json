@@ -1,6 +1,6 @@
 {
-  "installCommand": "npm install --force",
-  "buildCommand": "ng build",
+   "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npx ng build --configuration production",
   "outputDirectory": "dist/frontend/browser",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },

@@ -10,6 +10,7 @@ import { ActivityPaperModalComponent } from '../../../shared/components/activity
 })
 export class Class9ComponentaHardware {
   readonly subject: 'informatica' | 'tic' = 'tic';
+  showFisaHardware = false;
 
   constructor(private dialog: MatDialog) {}
 

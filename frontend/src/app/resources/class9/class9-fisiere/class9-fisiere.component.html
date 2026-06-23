@@ -49,9 +49,14 @@
       <ul>
         <li>enumerarea etapelor în lucrul cu un fișier text și a metodelor corespunzătoare în Python: open(), read(),
           write() și close()
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('enumerarea etapelor în lucrul cu un fișier text și a metodelor corespunzătoare în Python: open(), read(), write() și close()')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaFisiere = !showFisaFisiere">
+              {{ showFisaFisiere ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showFisaFisiere" style="margin-top: 8px;">
+              <iframe src="/fisere/Fisiere_in_Python_citirea_si_scrierea_datelor2.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
         </li>
       </ul>
     </li>

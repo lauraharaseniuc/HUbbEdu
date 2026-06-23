@@ -3,16 +3,13 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivityPaperModalComponent } from '../../../shared/components/activity-paper-modal/activity-paper-modal.component';
 
 @Component({
-  selector: 'app-class9-sortare',
-  standalone: true,
+  selector: 'app-class10-tic-intretinere',
   imports: [],
-  templateUrl: './class9-sortare.component.html',
-  styleUrl: './class9-sortare.component.scss'
+  templateUrl: './class10-tic-intretinere.html',
+  styleUrl: './class10-tic-intretinere.scss',
 })
-export class Class9SortareComponent {
-  readonly subject: 'informatica' | 'tic' = 'informatica';
-  showGhidJoc = false;
-  showFisaSortare = false;
+export class Class10TicIntretinere {
+  readonly subject: 'informatica' | 'tic' = 'tic';
 
   constructor(private dialog: MatDialog) {}
 

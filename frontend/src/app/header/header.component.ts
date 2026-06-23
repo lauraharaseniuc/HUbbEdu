@@ -38,6 +38,14 @@ export class HeaderComponent {
     {label: '13. Algoritmi de umplere', route: '/clasa10a/algoritmi-de-umplere'},
     {label: '14. Metoda Greedy', route: '/clasa10a/metoda-greedy'}
   ];
+  continuturiTIC10a = [
+    {label: '1. Securitate cibernetică și etică în spațiul digital', route: '/clasa10a/securitate-cibernetica'},
+    {label: '2. Navigare avansată pe web', route: '/clasa10a/navigare-avansata-pe-web'},
+    {label: '3. Pagini web', route: '/clasa10a/pagini-web'},
+    {label: '4. Birotică. Calcul tabelar', route: '/clasa10a/calcul-tabelar'},
+    {label: '5. Imagini digitale', route: '/clasa10a/imagini-digitale'},
+    {label: '6. Întreținere a unui sistem de calcul și depanare la nivel elementar a unor disfuncționalități frecvente', route: '/clasa10a/intretinere-sistem-de-calcul'}
+  ];
   continuturiTIC = [
     {label: '1. Comunicare și colaborare digitală', route: '/clasa9a/comunicare-si-colaborare-digitala'},
     {label: '2. Aplicații și platforme care sprijină învățarea', route: '/clasa9a/aplicatii-si-platforme-care-sprijina-invatarea'},

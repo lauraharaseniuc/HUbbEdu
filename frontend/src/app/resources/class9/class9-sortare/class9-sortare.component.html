@@ -22,16 +22,26 @@
         </li>
         <li>analizarea algoritmului de sortare prin selecția minimului, pentru o lista cu n valori, estimând numărul de
           comparări pentru un caz favorabil, un caz mediu și un caz nefavorabil
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('analizarea algoritmului de sortare prin selecția minimului, pentru o lista cu n valori, estimând numărul de comparări pentru un caz favorabil, un caz mediu și un caz nefavorabil')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaSortare = !showFisaSortare">
+              {{ showFisaSortare ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showFisaSortare" style="margin-top: 8px;">
+              <iframe src="/fisere/Fisa2_Informatica_Sortare.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
         </li>
         <li>compararea metodei de selecție a minimului cu altă metodă de sortare (de exemplu, metoda bulelor) aplicate
           pe un set de 200 de punctaje obținute de participanții la olimpiada de informatică din care se vor obține, în
           ordine descrescătoare, cele mai mari 10 punctaje, din perspectiva numărului de comparări și interschimbări
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('compararea metodei de selecție a minimului cu altă metodă de sortare (de exemplu, metoda bulelor) aplicate pe un set de 200 de punctaje obținute de participanții la olimpiada de informatică din care se vor obține, în ordine descrescătoare, cele mai mari 10 punctaje, din perspectiva numărului de comparări și interschimbări')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showGhidJoc = !showGhidJoc">
+              {{ showGhidJoc ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showGhidJoc" style="margin-top: 8px;">
+              <iframe src="/fisere/Ghid_Joc.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
         </li>
       </ul>
     </li>

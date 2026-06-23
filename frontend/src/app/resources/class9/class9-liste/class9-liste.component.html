@@ -20,9 +20,14 @@
         <li>recunoașterea caracteristicilor unei stive și ale unei cozi, din punctul de vedere al modului în care se
           accesează și gestionează elementele, în contextul exemplificării stivuirii unor farfurii, respectiv așezării
           unor persoane la un rând, pentru a cumpăra bilete la cinema
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('recunoașterea caracteristicilor unei stive și ale unei cozi, din punctul de vedere al modului în care se accesează și gestionează elementele, în contextul exemplificării stivuirii unor farfurii, respectiv așezării unor persoane la un rând, pentru a cumpăra bilete la cinema')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaStiva = !showFisaStiva">
+              {{ showFisaStiva ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showFisaStiva" style="margin-top: 8px;">
+              <iframe src="/fisere/Fisa_de_lucru_Stiva_si_coada_in_viata_reala2.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
         </li>
         <li>explicarea modului în care principiile de organizare ale unei stive și ale unei cozi reflectă situații din
           viața reală, exemplificate prin stiva de farfurii dintr-o bucătărie (LIFO) și coada de persoane la ghișeu

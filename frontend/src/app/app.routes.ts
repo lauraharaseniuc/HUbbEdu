@@ -33,6 +33,12 @@ import {Class10DivideEtImpera} from "./resources/class10/class10-divide-et-imper
 import {Class10MetodePrelucrare} from "./resources/class10/class10-metode-prelucrare/class10-metode-prelucrare";
 import {Class10AlgoritmiUmplere} from "./resources/class10/class10-algoritmi-umplere/class10-algoritmi-umplere";
 import {Class10Greedy} from "./resources/class10/class10-greedy/class10-greedy";
+import {Class10TicSecuritate} from "./resources/class10/class10-tic-securitate/class10-tic-securitate";
+import {Class10TicNavigare} from "./resources/class10/class10-tic-navigare/class10-tic-navigare";
+import {Class10TicPaginiWeb} from "./resources/class10/class10-tic-pagini-web/class10-tic-pagini-web";
+import {Class10TicCalculTabelar} from "./resources/class10/class10-tic-calcul-tabelar/class10-tic-calcul-tabelar";
+import {Class10TicImageniDigitale} from "./resources/class10/class10-tic-imagini-digitale/class10-tic-imagini-digitale";
+import {Class10TicIntretinere} from "./resources/class10/class10-tic-intretinere/class10-tic-intretinere";
 
 export const routes: Routes = [
   {
@@ -70,5 +76,11 @@ export const routes: Routes = [
   { path: 'clasa10a/metoda-divide-et-impera', component: Class10DivideEtImpera },
   { path: 'clasa10a/metode-de-prelucrare-a-listelor-sortate', component: Class10MetodePrelucrare },
   { path: 'clasa10a/algoritmi-de-umplere', component: Class10AlgoritmiUmplere },
-  { path: 'clasa10a/metoda-greedy', component: Class10Greedy }
+  { path: 'clasa10a/metoda-greedy', component: Class10Greedy },
+  { path: 'clasa10a/securitate-cibernetica', component: Class10TicSecuritate },
+  { path: 'clasa10a/navigare-avansata-pe-web', component: Class10TicNavigare },
+  { path: 'clasa10a/pagini-web', component: Class10TicPaginiWeb },
+  { path: 'clasa10a/calcul-tabelar', component: Class10TicCalculTabelar },
+  { path: 'clasa10a/imagini-digitale', component: Class10TicImageniDigitale },
+  { path: 'clasa10a/intretinere-sistem-de-calcul', component: Class10TicIntretinere }
 ];

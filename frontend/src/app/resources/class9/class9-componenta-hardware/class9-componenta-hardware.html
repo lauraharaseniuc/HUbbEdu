@@ -50,9 +50,14 @@
         <li>recunoașterea unităților de măsură pentru un set de componente hardware (GHz pentru CPU, GB pentru RAM, TB
           pentru HDD etc.), în contextul citirii specificațiilor acestora, având ca finalitate completarea unui tabel de
           asociere
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('recunoașterea unităților de măsură pentru un set de componente hardware (GHz pentru CPU, GB pentru RAM, TB pentru HDD etc.), în contextul citirii specificațiilor acestora, având ca finalitate completarea unui tabel de asociere')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaHardware = !showFisaHardware">
+              {{ showFisaHardware ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showFisaHardware" style="margin-top: 8px;">
+              <iframe src="/fisere/Fisa1_TIC_Hardware.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
         </li>
         <li>identificarea cauzelor posibile ale unei defecțiuni hardware, într-un scenariu dat (de exemplu, „PC-ul
           pornește, dar monitorul nu primește semnal"), având ca finalitate elaborarea unui raport de diagnostic (listă)

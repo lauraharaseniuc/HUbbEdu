@@ -75,6 +75,21 @@ export class HomepageComponent {
         'Metoda Greedy'
       ],
       count: 14
+    },
+    {
+      iconType: 'tic',
+      title: 'TIC',
+      subtitle: 'Clasa a X-a',
+      desc: 'Securitate cibernetică, navigare avansată pe web, pagini web (HTML, CSS, JavaScript), calcul tabelar avansat, imagini digitale și întreținerea unui sistem de calcul.',
+      topics: [
+        'Securitate cibernetică și etică în spațiul digital',
+        'Navigare avansată pe web',
+        'Pagini web',
+        'Birotică. Calcul tabelar',
+        'Imagini digitale',
+        'Întreținere a unui sistem de calcul și depanare la nivel elementar a unor disfuncționalități frecvente'
+      ],
+      count: 6
     }
   ];
 

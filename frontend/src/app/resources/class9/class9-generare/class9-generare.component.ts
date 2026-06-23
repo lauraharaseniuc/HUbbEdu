@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ActivityPaperModalComponent } from '../../../shared/components/activity-paper-modal/activity-paper-modal.component';
+import {Component} from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import {
+  ActivityPaperModalComponent
+} from '../../../shared/components/activity-paper-modal/activity-paper-modal.component';
 
 @Component({
   selector: 'app-class9-generare',
@@ -11,12 +13,14 @@ import { ActivityPaperModalComponent } from '../../../shared/components/activity
 })
 export class Class9GenerareComponent {
   readonly subject: 'informatica' | 'tic' = 'informatica';
+  showFisaFibonacci = false;
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) {
+  }
 
   generateActivity(activityText: string) {
     this.dialog.open(ActivityPaperModalComponent, {
-      data: { activityText, subject: this.subject },
+      data: {activityText, subject: this.subject},
       width: '760px',
       maxWidth: '95vw',
     });

@@ -20,7 +20,7 @@
           <ul class="dropdown">
             <li class="has-submenu">Clasa a IX-a
               <ul class="dropdown right">
-                <li>Programa</li>
+                <li [routerLink]="['/clasa9a/programa-informatica']" style="cursor: pointer;">Programa</li>
                 <li class="has-submenu">Planificări calendaristice
                   <ul class="dropdown right">
                     <li>Matematică-informatică</li>
@@ -41,6 +41,7 @@
             </li>
             <li class="has-submenu">Clasa a X-a
               <ul class="dropdown right">
+                <li [routerLink]="['/clasa10a/programa-informatica']" style="cursor: pointer;">Programa</li>
                 <li class="has-submenu">Conținuturi
                   <ul class="dropdown right scrollable">
                     @for (item of continuturiInformatica10a; track item) {
@@ -50,7 +51,7 @@
                 </li>
               </ul>
             </li>
-            <li>Instrumente digitale</li>
+            <li [routerLink]="['/instrumente-digitale']" style="cursor: pointer;">Instrumente digitale</li>
           </ul>
         </li>
 
@@ -58,7 +59,7 @@
           <ul class="dropdown">
             <li class="has-submenu">Clasa a IX-a
               <ul class="dropdown right">
-                <li>Programa</li>
+                <li [routerLink]="['/clasa9a/programa-tic']" style="cursor: pointer;">Programa</li>
                 <li class="has-submenu">Planificări calendaristice</li>
                 <li>Proiecte ale unităților de învățare</li>
                 <li class="has-submenu">Conținuturi
@@ -72,6 +73,7 @@
             </li>
             <li class="has-submenu">Clasa a X-a
               <ul class="dropdown right">
+                <li [routerLink]="['/clasa10a/programa-tic']" style="cursor: pointer;">Programa</li>
                 <li class="has-submenu">Conținuturi
                   <ul class="dropdown right scrollable">
                     @for (item of continuturiTIC10a; track item) {

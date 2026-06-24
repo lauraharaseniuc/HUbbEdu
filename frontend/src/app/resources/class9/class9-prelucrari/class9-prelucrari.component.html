@@ -48,9 +48,14 @@
           contextul determinării valorii rezultate în urma eliminării tuturor cifrelor impare ale unui număr,
           evidențiind
           necesitatea păstrării ordinii inițiale a cifrelor pare rămase și a cifrelor nule de la finalul numărului
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('reamintirea secvenței de operații necesare pentru a adăuga o cifră la dreapta celorlalte cifre ale unui număr, în contextul determinării valorii rezultate în urma eliminării tuturor cifrelor impare ale unui număr, evidențiind necesitatea păstrării ordinii inițiale a cifrelor pare rămase și a cifrelor nule de la finalul numărului')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaPrelucrari = !showFisaPrelucrari">
+              {{ showFisaPrelucrari ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showFisaPrelucrari" style="margin-top: 8px;">
+              <iframe src="/fisere/prelucrari_ale_numerelor.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
         </li>
         <li>explicarea procesului de formare a unui număr nou prin adăugarea repetată a câte unei cifre în stânga celor
           existente, evidențiind înmulțirea cifrei adăugate cu o variabilă, pe baza unui algoritm dat

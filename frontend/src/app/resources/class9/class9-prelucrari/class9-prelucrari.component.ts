@@ -11,6 +11,7 @@ import { ActivityPaperModalComponent } from '../../../shared/components/activity
 })
 export class Class9PrelucrariComponent {
   readonly subject: 'informatica' | 'tic' = 'informatica';
+  showFisaPrelucrari = false;
 
   constructor(private dialog: MatDialog) {}
 

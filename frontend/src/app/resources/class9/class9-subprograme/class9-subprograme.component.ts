@@ -15,6 +15,7 @@ import {
 })
 export class Class9SubprogrameComponent {
   readonly subject: 'informatica' | 'tic' = 'informatica';
+  showFisaSubprograme = false;
 
   constructor(private dialog: MatDialog) {}
 

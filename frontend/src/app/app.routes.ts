@@ -39,6 +39,11 @@ import {Class10TicPaginiWeb} from "./resources/class10/class10-tic-pagini-web/cl
 import {Class10TicCalculTabelar} from "./resources/class10/class10-tic-calcul-tabelar/class10-tic-calcul-tabelar";
 import {Class10TicImageniDigitale} from "./resources/class10/class10-tic-imagini-digitale/class10-tic-imagini-digitale";
 import {Class10TicIntretinere} from "./resources/class10/class10-tic-intretinere/class10-tic-intretinere";
+import {Class9ProgramaInformatica} from "./resources/class9/class9-programa-informatica/class9-programa-informatica";
+import {Class10ProgramaInformatica} from "./resources/class10/class10-programa-informatica/class10-programa-informatica";
+import {Class9ProgramaTic} from "./resources/class9/class9-programa-tic/class9-programa-tic";
+import {Class10ProgramaTic} from "./resources/class10/class10-programa-tic/class10-programa-tic";
+import {InstrumenteDigitale} from "./resources/instrumente-digitale/instrumente-digitale";
 
 export const routes: Routes = [
   {
@@ -46,6 +51,11 @@ export const routes: Routes = [
     component: HomepageComponent,
     pathMatch: 'full'
   },
+  { path: 'clasa9a/programa-informatica', component: Class9ProgramaInformatica },
+  { path: 'clasa10a/programa-informatica', component: Class10ProgramaInformatica },
+  { path: 'clasa9a/programa-tic', component: Class9ProgramaTic },
+  { path: 'clasa10a/programa-tic', component: Class10ProgramaTic },
+  { path: 'instrumente-digitale', component: InstrumenteDigitale },
   { path: 'clasa9a/principii-de-elaborare-a-unui-program', component: Class9PrincipiiComponent },
   { path: 'clasa9a/subprograme', component: Class9SubprogrameComponent },
   { path: 'clasa9a/prelucrari-ale-numerelor', component: Class9PrelucrariComponent },

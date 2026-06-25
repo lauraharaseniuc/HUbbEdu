@@ -11,14 +11,30 @@
 
         <div class="tool-card__icon">
           @if (tool.icon === 'game') {
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
               <rect x="2" y="8" width="24" height="14" rx="4" stroke="currentColor" stroke-width="2"/>
               <path d="M9 15h4M11 13v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               <circle cx="18" cy="14" r="1.2" fill="currentColor"/>
               <circle cx="21" cy="16" r="1.2" fill="currentColor"/>
             </svg>
+          } @else if (tool.icon === 'visualize') {
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="3" y="16" width="5" height="9" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="11" y="10" width="5" height="15" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="19" y="4" width="5" height="21" rx="1" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          } @else if (tool.icon === 'course') {
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M4 6h20M4 10h20M4 14h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="21" cy="20" r="5" stroke="currentColor" stroke-width="2"/>
+              <path d="M19 20l1.5 1.5L23 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          } @else if (tool.icon === 'code') {
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M10 9l-5 5 5 5M18 9l5 5-5 5M15 7l-3 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           } @else {
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
               <rect x="3" y="3" width="22" height="22" rx="4" stroke="currentColor" stroke-width="2"/>
               <path d="M9 14l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>

@@ -44,6 +44,12 @@ import {Class10ProgramaInformatica} from "./resources/class10/class10-programa-i
 import {Class9ProgramaTic} from "./resources/class9/class9-programa-tic/class9-programa-tic";
 import {Class10ProgramaTic} from "./resources/class10/class10-programa-tic/class10-programa-tic";
 import {InstrumenteDigitale} from "./resources/instrumente-digitale/instrumente-digitale";
+import {InstrumenteDigitaleTic} from "./resources/instrumente-digitale-tic/instrumente-digitale-tic";
+import {Class10PlanificareIntensiv} from "./resources/class10/class10-planificare-intensiv/class10-planificare-intensiv";
+import {Class9PlanificareTic} from "./resources/class9/class9-planificare-tic/class9-planificare-tic";
+import {Class9PlanificareStiinte} from "./resources/class9/class9-planificare-stiinte/class9-planificare-stiinte";
+import {Class10PlanificareTic} from "./resources/class10/class10-planificare-tic/class10-planificare-tic";
+import {Class10PlanificareMateInfo} from "./resources/class10/class10-planificare-mate-info/class10-planificare-mate-info";
 
 export const routes: Routes = [
   {
@@ -56,6 +62,12 @@ export const routes: Routes = [
   { path: 'clasa9a/programa-tic', component: Class9ProgramaTic },
   { path: 'clasa10a/programa-tic', component: Class10ProgramaTic },
   { path: 'instrumente-digitale', component: InstrumenteDigitale },
+  { path: 'instrumente-digitale-tic', component: InstrumenteDigitaleTic },
+  { path: 'clasa10a/planificare-matematica-informatica-intensiv', component: Class10PlanificareIntensiv },
+  { path: 'clasa9a/planificare-tic', component: Class9PlanificareTic },
+  { path: 'clasa9a/planificare-stiinte-ale-naturii', component: Class9PlanificareStiinte },
+  { path: 'clasa10a/planificare-tic', component: Class10PlanificareTic },
+  { path: 'clasa10a/planificare-matematica-informatica', component: Class10PlanificareMateInfo },
   { path: 'clasa9a/principii-de-elaborare-a-unui-program', component: Class9PrincipiiComponent },
   { path: 'clasa9a/subprograme', component: Class9SubprogrameComponent },
   { path: 'clasa9a/prelucrari-ale-numerelor', component: Class9PrelucrariComponent },

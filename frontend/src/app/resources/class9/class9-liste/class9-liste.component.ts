@@ -13,6 +13,7 @@ export class Class9ListeComponent {
   readonly subject: 'informatica' | 'tic' = 'informatica';
   showFisaStiva = false;
   showFisaListe = false;
+  showFisaOperatiiListe = false;
 
   constructor(private dialog: MatDialog) {}
 

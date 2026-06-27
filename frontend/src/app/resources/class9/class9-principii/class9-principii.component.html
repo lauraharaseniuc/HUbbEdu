@@ -11,9 +11,11 @@
       <ul>
         <li>identificarea datelor cu care lucrează algoritmii, pe baza caracteristicilor acestora (date de intrare, date
           ieșire, date de manevră)
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('identificarea datelor cu care lucrează algoritmii, pe baza caracteristicilor acestora (date de intrare, date ieșire, date de manevră)')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <a [routerLink]="['/clasa9a/principii-fise']" class="generate-btn modal-btn modal-btn--close">
+              Vezi fișele de lucru
+            </a>
+          </div>
         </li>
         <li>conceperea unei diagrame care ilustrează etapele de elaborare a unui program
           <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('conceperea unei diagrame care ilustrează etapele de elaborare a unui program')">

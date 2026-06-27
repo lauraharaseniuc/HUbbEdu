@@ -43,9 +43,20 @@
           analizarea descompunerii unui program complex de prelucrare a datelor în subprograme, prin identificarea
           variabilelor locale și globale și explicarea modului în care acestea influențează funcționarea independentă a
           fiecărui subprogram
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('analizarea descompunerii unui program complex de prelucrare a datelor în subprograme, prin identificarea variabilelor locale și globale și explicarea modului în care acestea influențează funcționarea independentă a fiecărui subprogram')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showVideoSubprograme = !showVideoSubprograme">
+              {{ showVideoSubprograme ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div class="video-wrapper" [hidden]="!showVideoSubprograme">
+              <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube-nocookie.com/embed/4d7WsRVnSQw"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
         </li>
         <li>
           analizarea diferențelor dintre apelul unui subprogram cu parametri și fără parametri, în contextul unui
@@ -80,20 +91,22 @@
           în contextul recapitulării modului de organizare a codului într-un proiect existent, prin completarea unui
           șablon de cod parțial
           <div class="resource-block">
-            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaSubprograme = !showFisaSubprograme">
-              {{ showFisaSubprograme ? 'Ascunde resursele' : 'Vezi resursele' }}
-            </button>
-            <div [hidden]="!showFisaSubprograme" style="margin-top: 8px;">
-              <iframe src="/fisere/subprograme.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
-            </div>
+            <a [routerLink]="['/clasa9a/subprograme-fise']" class="generate-btn modal-btn modal-btn--close">
+              Vezi fișele de lucru
+            </a>
           </div>
         </li>
         <li>
           implementarea sintaxei de definire și apel a unui subprogram Python pentru rezolvarea unei situații practice
           de calcul al ariei unui teren, folosind ca parametri lungimea și lățimea introduse de utilizator
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('implementarea sintaxei de definire și apel a unui subprogram Python pentru rezolvarea unei situații practice de calcul al ariei unui teren, folosind ca parametri lungimea și lățimea introduse de utilizator')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaGhidFunctii = !showFisaGhidFunctii">
+              {{ showFisaGhidFunctii ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showFisaGhidFunctii" style="margin-top: 8px;">
+              <iframe src="/fisere/Ghid_Practic_Functiin_Python_Sintaxa.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
         </li>
         <li>
           justificarea alegerii unei variante de definire și apel al unui subprogram Python, din mai multe variante

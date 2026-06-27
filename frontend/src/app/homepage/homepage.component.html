@@ -10,7 +10,8 @@
       <div class="carousel">
         <button class="carousel-arrow" (click)="prev()" [disabled]="!canPrev" aria-label="Anterior">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round"/>
           </svg>
         </button>
 
@@ -26,7 +27,8 @@
                   </svg>
                 } @else {
                   <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 8l7 5.5L5 19M13 19h8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 8l7 5.5L5 19M13 19h8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                          stroke-linejoin="round"/>
                   </svg>
                 }
               </div>
@@ -47,29 +49,28 @@
 
         <button class="carousel-arrow" (click)="next()" [disabled]="!canNext" aria-label="Următor">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round"/>
           </svg>
         </button>
       </div>
 
       <div class="carousel-dots">
         @for (i of dotIndices; track i) {
-          <button class="carousel-dot" [class.active]="currentIndex === i" (click)="currentIndex = i" [attr.aria-label]="'Pagina ' + (i + 1)"></button>
+          <button class="carousel-dot" [class.active]="currentIndex === i" (click)="currentIndex = i"
+                  [attr.aria-label]="'Pagina ' + (i + 1)"></button>
         }
       </div>
 
     </div>
   </section>
 
-  <section class="reform-info">
-    <div class="reform-inner">
-      <div class="reform-badge">Cum ne adaptăm?</div>
-      <h2>Reforma curriculară din septembrie 2026</h2>
-      <p>
-        Această platformă oferă resurse actualizate pentru a sprijini tranziția, cu activități de învățare
-        aliniate noii programe.
-      </p>
-    </div>
-  </section>
+  <footer class="credits-footer">
+    <p>
+      <strong>Materialele din platformă au fost realizate de studenții de la specializările Informatică, Ingineria
+        informației și Inteligență artificială în cadrul materiei Didactica specialității și publicate cu acordul lor.
+        Mulțumim pentru contribuția adusă prin elaborarea de materiale didactice pentru această platformă!</strong>
+    </p>
+  </footer>
 
 </div>

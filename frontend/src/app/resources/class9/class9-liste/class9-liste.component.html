@@ -286,9 +286,14 @@
         <li>explicarea modului de funcționare a metodelor append(), insert() și pop() în contextul unei aplicații de
           gestionare a unei liste de participanți la un eveniment, prin justificarea efectelor fiecărei metode asupra
           structurii listei
-          <button class="generate-btn modal-btn modal-btn--close" (click)="generateActivity('explicarea modului de funcționare a metodelor append(), insert() și pop() în contextul unei aplicații de gestionare a unei liste de participanți la un eveniment, prin justificarea efectelor fiecărei metode asupra structurii listei')">
-            Generează fișă
-          </button>
+          <div class="resource-block">
+            <button class="generate-btn modal-btn modal-btn--close" (click)="showFisaOperatiiListe = !showFisaOperatiiListe">
+              {{ showFisaOperatiiListe ? 'Ascunde resursele' : 'Vezi resursele' }}
+            </button>
+            <div [hidden]="!showFisaOperatiiListe" style="margin-top: 8px;">
+              <iframe src="/fisere/operatii_liste_in_python.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+            </div>
+          </div>
         </li>
         <li>aplicarea metodelor count() și index() în rezolvarea unei situații practice de numărare a produselor
           identice și de identificare a poziției unui articol într-o listă de stocuri, prin scrierea unui program Python

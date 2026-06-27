@@ -22,7 +22,7 @@ export class InstrumenteDigitale {
       title: 'Dungeon Crawler — Python Quest',
       description: 'Joc educativ interactiv pentru exersarea conceptelor de programare Python. Elevii parcurg 4 etaje ale unui dungeon — Cripta Variabilelor, Labirintul Buclelor, Citadela Erorii și Sala Scriptorilor — rezolvând provocări despre variabile și tipuri, operatori, condiții, bucle, șiruri de caractere, liste, funcții, dicționare și tupluri.',
       url: 'https://dungeon-crawler-teal.vercel.app/',
-      tags: ['Clasa a IX-a', 'Python', 'Joc educativ'],
+      tags: ['Clasa a IX-a', 'Clasa a X-a', 'Clasa a XI-a', 'Python', 'Joc educativ'],
       icon: 'game',
     },
     {
@@ -45,6 +45,20 @@ export class InstrumenteDigitale {
       url: 'https://cs50.harvard.edu/x/',
       tags: ['Clasa a IX-a', 'Clasa a X-a', 'Algoritmi', 'Python', 'C++'],
       icon: 'course',
+    },
+    {
+      title: 'Aventurierul și Inventarul Magic 🛡️',
+      description: 'Joc educativ în Python (tkinter) despre liste și dicționare. Jucătorul explorează o pădure magică, gestionează un inventar de obiecte (liste), folosește o bază de date de obiecte (dicționare) și luptă cu goblini. Descarcă fișierul .py și rulează-l local cu Python 3.',
+      url: '/fisere/Aventurierul_si_Inventarul_Magic.py',
+      tags: ['Clasa a IX-a', 'Clasa a X-a', 'Liste', 'Dicționare', 'Joc educativ', 'tkinter'],
+      icon: 'game',
+    },
+    {
+      title: 'Ghid de Instalare PyCharm',
+      description: 'Ghid pas cu pas pentru instalarea PyCharm Community Edition pe Windows — IDE-ul gratuit recomandat pentru Python. Include capturi de ecran, sfaturi pentru elevi și comparație între ediția Community (gratuită) și Professional.',
+      url: '/fisere/Ghid-de-Instalare-PyCharm.pdf',
+      tags: ['Clasa a IX-a', 'Clasa a X-a', 'Python', 'Setup', 'PyCharm'],
+      icon: 'code',
     },
     {
       title: 'Blockly Games',

@@ -314,6 +314,17 @@
       font-size: 0.78rem;
       top: 0.35rem;
     }
+
+    a {
+      color: #1E293B;
+      text-decoration: none;
+      transition: color 0.15s;
+
+      &:hover {
+        color: #1A56DB;
+        text-decoration: underline;
+      }
+    }
   }
 }
 

@@ -36,8 +36,8 @@
               <h3>{{ card.title }}</h3>
               <p class="subject-desc">{{ card.desc }}</p>
               <ul class="subject-topics">
-                @for (topic of card.topics; track topic) {
-                  <li>{{ topic }}</li>
+                @for (topic of card.topics; track topic.route) {
+                  <li><a [routerLink]="topic.route">{{ topic.label }}</a></li>
                 }
               </ul>
               <div class="subject-footer">
@@ -68,7 +68,7 @@
   <footer class="credits-footer">
     <p>
       <strong>Materialele din platformă au fost realizate de studenții de la specializările Informatică, Ingineria
-        informației și Inteligență artificială în cadrul materiei Didactica specialității și publicate cu acordul lor.
+        informației și Inteligență artificială în cadrul materiei Didactica informaticii și publicate cu acordul lor.
         Mulțumim pentru contribuția adusă prin elaborarea de materiale didactice pentru această platformă!</strong>
     </p>
   </footer>
